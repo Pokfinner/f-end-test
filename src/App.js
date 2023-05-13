@@ -20,11 +20,6 @@ function App() {
 
   }
 
-  const corAleatoria = () => {
-
-    
-
-  }
 
   return (
     <div className={`App ${theme}`}>
@@ -42,7 +37,7 @@ function App() {
       <button onClick={() => setarCoresDosCartoes("red")}> Setar para Vermelho </button>
       <button onClick={() => setarCoresDosCartoes("green")}> Setar para Verde </button>
 
-      <button id='theme-button' className={theme} onClick={() => { theme == "dark" ? setTheme("light") : setTheme("dark") }}> Change Theme </button>
+      <button id='theme-button' className={theme} onClick={() => { theme === "dark" ? setTheme("light") : setTheme("dark") }}> Change Theme </button>
 
       <Cartao cardColor={cardColor} cvv="696" number="0010 1242 1152 1202" />
       <Cartao cardColor={cardColor} cvv="969" number="1010 4242 8152 1206" />
