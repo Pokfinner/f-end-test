@@ -9,7 +9,7 @@ const Cartao = (props) => {
             {props.number}
             <br />
             {props.cvv}
-            <img className="card-logo" src={mcardLogo} />
+            <img alt="Credit Card" className="card-logo" src={mcardLogo} />
         </div>
     )
 
